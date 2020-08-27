@@ -1,0 +1,24 @@
+.contact-preview {
+
+    .img-robo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .img-trash {
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+    }
+
+    .name {
+        color: white;
+        font-size: 20px;
+        display: inline-block;
+        width: 180px;
+
+        &:hover {
+            color: #E57A44;;
+        }
+    }
+}

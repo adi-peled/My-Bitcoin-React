@@ -1,0 +1,17 @@
+.signup {
+    max-width: 440px;
+    margin: 0 auto;
+    font-size: 40px;
+    
+    .white {
+        width: 180px;
+        display: inline-block;
+    }
+
+    .btns{
+        justify-content: space-between;
+        button{
+            width: 40%;
+        }
+    }
+}
