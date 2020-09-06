@@ -9,7 +9,7 @@ export default class TransferFunds extends Component {
     handleChange = ({ target }) => {
         const field = target.name
         const value = target.type === 'number' ? +target.value : target.value
-        console.log(value);
+        (value);
         this.setState({ amount: value })
     }
 

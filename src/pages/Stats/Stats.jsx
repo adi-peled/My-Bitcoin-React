@@ -18,7 +18,6 @@ export class Stats extends Component {
                     arr.push(value[property])
                 }
             }
-            console.log(arr);
             return arr
         })
         data.unshift(["x", ""],)

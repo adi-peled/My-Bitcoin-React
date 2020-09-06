@@ -17,9 +17,9 @@ function _Header(props) {
                 <ul className="flex nav-header" >
                     <li>  <NavLink to="/">Home</NavLink></li>
                     <li> <NavLink to="/contact">Contact</NavLink> </li>
+                    <li> <NavLink to="/stats">Stats</NavLink> </li>
                     {!user() && <li>  <NavLink to="/signup">Sign up</NavLink></li>}
                     {user() && <button className="btn-logout" onClick={() => props.logout()}> Logout</button>}
-                    <li> <NavLink to="/stats">Stats</NavLink> </li>
                 </ul>
             </nav>
         </header>

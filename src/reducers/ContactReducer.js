@@ -32,7 +32,6 @@ export function ContactReducer(state = INITIAL_STATE, action) {
                 contacts: state.contacts.filter(contact => contact._id !== action.id)
             }
         case 'UPDATE_CONTACT':
-            console.log('update', action);
             return {
                 ...state,
                 contacts: state.contacts.map(contact => contact._id === action.contact._id ? action.contact : contact)

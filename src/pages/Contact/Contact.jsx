@@ -11,7 +11,6 @@ class _Contact extends Component {
     componentDidMount() {
         this.props.loadContacts()
         const { user } = this.props
-        console.log('usee', user);
         if (!user) this.props.history.push('/signup');
 
     }

@@ -15,7 +15,6 @@ export function setUser() {
 export function trnasferCoins(move) {
     return async dispatch => {
         const boolean = await userService.trnasferCoins(move)
-        console.log(boolean);
         if (boolean) dispatch(_transferCoins(move))
     }
 }
