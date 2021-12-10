@@ -37,7 +37,7 @@ export function loadContact(id) {
 
 export function saveContact(contact) {
     return async dispatch => {
-        const type = (contact._id) ? '_updateContact' : 'addContact'
+        const type = (contact._id) ? '_updateContact' : '_addContact'
         const savedContact = contactService.saveContact(contact)
         if (type === '_updateContact') {
             dispatch(_updateContact(savedContact))

@@ -10,7 +10,7 @@ import { Stats } from './pages/Stats/Stats'
 import './App.scss'
 import userService from './services/userService.js'
 function App() {
-
+  
   function logout() {
     userService.logout()
     this.history.push('signup')

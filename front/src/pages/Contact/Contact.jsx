@@ -7,12 +7,10 @@ import { BrowserRouter as Router, Link } from "react-router-dom";
 import './Contact.scss'
 class _Contact extends Component {
 
-
     componentDidMount() {
         this.props.loadContacts()
         const { user } = this.props
         if (!user) this.props.history.push('/signup');
-
     }
 
     onFilter = (filterBy) => {
@@ -20,13 +18,9 @@ class _Contact extends Component {
         this.props.loadContacts()
     }
 
-
     removeContact = async (id) => {
         await this.props.removeContact(id)
     }
-
-
-
 
     render() {
         const { contacts } = this.props

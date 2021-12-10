@@ -10,7 +10,6 @@ export class Signup extends Component {
         }
     }
 
-
     signup = () => {
         userService.signup(this.state.user)
         this.props.history.push('/')

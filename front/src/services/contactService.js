@@ -6,7 +6,6 @@ export const contactService = {
     getEmptyContact
 }
 
-
 const contacts = [
     {
         "_id": "5a56640269f443a5d64b32ca",
@@ -138,15 +137,15 @@ function sort(arr) {
     })
 }
 
-function getContacts(filterBy = null) {
-    return new Promise((resolve, reject) => {
-        var contactsToReturn = contacts;
-        if (filterBy && filterBy.name) {
-            contactsToReturn = filter(filterBy.name)
-        }
-        resolve(sort(contactsToReturn))
-    })
-}
+    function getContacts(filterBy = null) {
+        return new Promise((resolve, reject) => {
+            var contactsToReturn = contacts;
+            if (filterBy && filterBy.name) {
+                contactsToReturn = filter(filterBy.name)
+            }
+            resolve(sort(contactsToReturn))
+        })
+    }
 
 function getContactById(id) {
     return new Promise((resolve, reject) => {
@@ -206,11 +205,11 @@ function filter(term) {
     })
 }
 
-function _makeId(length = 10) {
-    var txt = ''
-    var possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
-    for (var i = 0; i < length; i++) {
-        txt += possible.charAt(Math.floor(Math.random() * possible.length))
+    function _makeId(length = 10) {
+        var txt = ''
+        var possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
+        for (var i = 0; i < length; i++) {
+            txt += possible.charAt(Math.floor(Math.random() * possible.length))
+        }
+        return txt
     }
-    return txt
-}

@@ -1,9 +1,8 @@
 import React from 'react'
-import {ContactPreview} from '../ContactPreview/ContactPreview'
+import { ContactPreview } from '../ContactPreview/ContactPreview'
 import contactService from '../../services/contactService';
 export default function ContactList(props) {
     const { contacts, removeContact } = props
-
 
 
 
